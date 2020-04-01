@@ -10,17 +10,14 @@ nav {
 		display: inline-block;
 		text-decoration: none;
 		padding: 20px 15px;
-		color: #444;
+		color: #f88832;
 		text-transform: uppercase;
 		letter-spacing: 1px;
-		font-size: .9em;
-
-		&.active {
-			color: #888;
-		}
+		font-size: 1.5em;		
 
 		&:hover {
-			color: #000;
+			color: #fcd4b5;
+			border-bottom: 2 solid #fcd4b5;
 		}
 	}
 }
