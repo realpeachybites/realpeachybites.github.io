@@ -17,5 +17,13 @@
   {% if page.url contains "recipes" %}
   	{% assign class_all = class_all | append: " active" %}
   {% endif %}
-  <a href="{% include relative-src.html src="/recipes" %}" class="{{ class_all }}">Recipes</a>
+		<a href="{% include relative-src.html src="/recipes" %}" class="{{ class_all }}">Recipes</a>
+{% for link in site.data.navigation %}
+	{% assign class = "" %}
+
+		{% if link.link == page.url %}
+			{% assign class = class | append: " active" %}
+		{% endif %}
+		<a href="{% include relative-src.html src=link.link %}" class="{{ class }}">{{ link.name }}</a>
+	{% endfor %}		
 </nav>
