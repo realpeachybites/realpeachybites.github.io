@@ -1,0 +1,21 @@
+<nav role="navigation">
+{% assign class_home = "nav-item" %}
+{% if page.url == "/" %}
+	{% assign class_home = class_home | append: " active" %}
+{% endif %}
+<a href="{% include relative-src.html src="/" %}" class="{{ class_home }}">Home</a>
+	{% for category in site.category %}
+	{% assign class = "nav-item" %}
+	{% assign cat_name = category.tag  %}
+	{% assign cat_path = category.permalink %}
+		{% if page.url contains category.tag | downcase | url_encode %}
+			{% assign class = class | append: " active" %}
+		{% endif %}
+		<a href="{% include relative-src.html src=cat_path %}" class="{{ class }}">{{ cat_name | capitalize }}</a>
+	{% endfor %}
+  {% assign class_all = "nav-item" %}
+  {% if page.url contains "recipes" %}
+  	{% assign class_all = class_all | append: " active" %}
+  {% endif %}
+  <a href="{% include relative-src.html src="/recipes" %}" class="{{ class_all }}">Recipes</a>
+</nav>
