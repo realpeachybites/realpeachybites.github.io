@@ -1,8 +1,8 @@
 .button, input[type="submit"] {
 	background: #fff;
 	cursor: pointer;
-	border: 1px solid #666;
-	color: #000;
+	border: 1px solid #f88832;
+	color: #f88832;
 	text-decoration: none;
 	padding: 5px 10px;
 	display: inline-flex;
@@ -11,7 +11,7 @@
 	font-size: .8em;
 
 	&:hover {
-		background: #000;
+		background: #f88832;
 		color: #fff;
 	}
 
@@ -21,10 +21,10 @@
 }
 
 .button {
-	border-color: #000;
+	border-color: #f88832;
 
 	a {
-		color: #000;
+		color: #f88832;
 
 		&:hover {
 			color: #fff;
@@ -44,11 +44,11 @@ input[type="text"], input[type="email"], textarea {
 	font-size: 1.1em;
 	padding: 10px;
 	box-sizing: border-box;
-	border: 1px solid #666;
+	border: 1px solid #f88832;
 	resize: none;
 
 	&:focus {
-		outline: 2px solid #333;
+		outline: 2px solid #f88832;
 	}
 }
 
@@ -101,10 +101,10 @@ select {
 	padding: 20px;
 	height: 43px;
 	background: #fff;
-	border-color: rgba(0,0,0,0);
+	border-color:#f88832;
 	font-size: 1em;
-	outline: 1px solid #000;
+	outline: 1px solid #f88832;
 	&:focus {
-		outline: 2px solid #333;
+		outline: 2px solid #f88832;
 	}
 }
