@@ -16,7 +16,7 @@
 		}
 		img {
 			width: 300px;
-			border-radius: 25%;
+			border-radius: 50%;
 			margin: 0 0 10px 0;
 		}
 	}
@@ -30,14 +30,14 @@
 			text-decoration: none;
 
 			&:hover svg {
-				fill: #000;
+				fill: #fcd4b5;
 			}
 		}
 
 		svg {
 			width: 25px;
 			height: 25px;
-			fill: $light-grey;
+			fill: #f88832;
 		}
 	}
 }
