@@ -39,11 +39,31 @@ ol li + li {
 }
 
 footer {
+	background-color: #f88832;
 	color: $light-grey;
 	text-align: center;
 	padding: 20px 0;
 	font-size: .8em;
 }
+footer .social-icons {
+		display: flex;
+		justify-content: center;
+		margin: 10px 0 0 0;
+		a {
+			padding: 3px;
+			text-decoration: none;
+
+			&:hover svg {
+				fill: #fcd4b5;
+			}
+		}
+
+		svg {
+			width: 25px;
+			height: 25px;
+			fill: #ffffff;
+		}
+	}
 
 hr {
 	 border: 0;

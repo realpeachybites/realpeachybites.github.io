@@ -6,7 +6,7 @@ url: "https://realpeachybites.github.io/"
 baseurl: ""
 google_analytics_key:
 newsletter_action: true
-disqus_shortname:
+disqus_shortname: realpeachybites-github-io.
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
