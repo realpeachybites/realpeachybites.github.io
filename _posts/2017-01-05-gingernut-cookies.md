@@ -8,6 +8,7 @@ recipe:
   servings: 60 cookies
   prep: 15 minutes
   cook: 15 minutes
+  spicy: low
   ingredients_markdown: |-
     * 200 g butter
     * 1 cup sugar

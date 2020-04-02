@@ -7,6 +7,7 @@ recipe:
   servings:
   prep:
   cook:
+  spicy:
   ingredients_markdown:
   directions_markdown:
 ---
