@@ -25,7 +25,7 @@ social:
 
 timezone: Etc/UTC
 
-paginate: 10
+paginate: 6
 paginate_path: "/:num/"
 permalink: pretty
 
