@@ -47,7 +47,7 @@
 				list-style-type: none;
 				&:before {
 					content: '\00bb';
-					color: #ff4e4e;
+					color: #f88832;
 					padding-right: 0.5em;
 				}
 			}
@@ -64,7 +64,7 @@
 				&:before {
 					content: counter(step-counter);
 					margin-right: 0px;
-					background-color: #ff4e4e;
+					background-color: #f88832;
 					color: white;
 					/* padding: 1px 7px; */
 					font-size: .7em;
