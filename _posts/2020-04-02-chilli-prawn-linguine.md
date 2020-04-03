@@ -3,7 +3,7 @@ date: 2020-04-02
 title: Chilli Prawn Linguine
 categories:
   - Pasta
-featured_image: /images/cp-linguine.jpg
+featured_image: /images/chilli-prawns.jpg
 recipe:
   servings: 4 servings  prep: 5 minutes
   cook: 20 minutes
@@ -39,4 +39,5 @@ recipe:
 
     7. Serve with mixed salad leaves drizzled with the lemon dressing, and crusty white bread.
 ---
+
 If you love prawns you're going to love this chilli prawn linguine. The lemon dressing and mixed leaves goes well with this dish. It's definitely one of my favorite all year-round comfort foods, it's also very healthy and nutritious. It is a perfect choice for spring and summer, when everyone tends to crave citrus or light & flavorful recipes.
