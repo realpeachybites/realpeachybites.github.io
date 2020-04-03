@@ -21,11 +21,17 @@ social:
     - https://realpeachybites.github.io/
 
 # -----
+
+# collections
+collections:
+  category:
+    output: true
+
 # Build
 
 timezone: Etc/UTC
 
-paginate: 6
+paginate: 10
 paginate_path: "/:num/"
 permalink: pretty
 
@@ -54,6 +60,16 @@ defaults:
     values:
       layout: "default"
       push_sidebar_down: true
+
+  -
+    scope:
+      path: ""
+      type: "category"
+    values:
+      layout: "category"
+      push_sidebar_down: true
+      image_view: true
+    
 
 plugins:
   - jekyll-sitemap
