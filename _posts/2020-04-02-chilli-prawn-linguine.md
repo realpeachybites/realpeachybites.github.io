@@ -4,7 +4,7 @@ title: Chilli Prawn Linguine
 categories:
   - Pasta
   - Seafood
-featured_image: /images/chilli-prawns.jpg
+featured_image: https://i.postimg.cc/wvRPFryw/Chilli-Prawns.jpg
 show_related: true
 recipe:
   servings: 4 servings  prep: 5 minutes
