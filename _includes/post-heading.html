@@ -4,7 +4,7 @@
 	</div>
 {% endif %}
 <h1>
-	<a href="{{ include.post.url }}">
+	<a href="{% include relative-src.html src=include.post.url %}">
 		{{ include.post.title }}
 	</a>
 </h1>

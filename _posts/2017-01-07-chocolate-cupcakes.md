@@ -5,6 +5,7 @@ categories:
   - Cupcakes
   - Cakes
 featured_image: https://source.unsplash.com/qJ0zGkrE1Zg/1560x940
+show_related: true
 recipe:
   servings: 12 cupcakes
   prep: 5 minutes
