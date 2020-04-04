@@ -41,5 +41,6 @@ recipe:
     7. Using an immersion blender liquidise the soup and add enough milk until you have a nice thick consistency.
 
     8. Chop the coriander, sprinkle over the soup and serve with some crusty wholegrain bread.
+---
 
 If you're a soup fan you're going to love this spicy soup. It is great for those cold and wintery days or evenings and warms your soul. This soup is great as part of your 5-A-Day veggies and you could make it even healthier by adding some chopped carrots.
