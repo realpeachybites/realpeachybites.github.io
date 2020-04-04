@@ -1,12 +1,14 @@
 ---
 date: 2020-04-02
 title: Chilli Prawn Linguine
-categories:  
-  - Seafood
+categories:
+
+ - Seafood
 featured_image: https://i.postimg.cc/wvRPFryw/Chilli-Prawns.jpg
 show_related: true
 recipe:
-  servings: 4 servings  prep: 5 minutes
+  servings: 4 servings
+  prep: 5 minutes
   cook: 20 minutes
   ingredients_markdown: |-
     * 2 tbsp olive oil
