@@ -26,7 +26,6 @@ recipe:
     * grated zest and juice of 1 lemon
     * 2 tsp caster sugar
     * 2 tbsp 0% greek yogurt
-
   directions_markdown: |-
     1. Make the dressing, mix the lemon zest and juice with the caster sugar and greek yogurt in a small bowl and season with salt and pepper. Set aside.
 
