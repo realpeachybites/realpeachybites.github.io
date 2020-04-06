@@ -35,7 +35,7 @@
  if (searchTerm) {
   document.getElementById('search-box').setAttribute("value", searchTerm);
 
-  // Initalize lunr with the fields it will be searching on. I've given title
+  // Initalize lunr with the fields it will be searching on. I've given category
   // a boost of 10 to indicate matches on this field are more important.
   var idx = lunr(function () {
    this.field('id');
@@ -43,15 +43,17 @@
    this.field('tag');
    this.field('category', { boost: 10 });
    this.field('content');
+   this.field('recipe');
   });
 
   for (var key in window.store) { // Add the data to lunr
    idx.add({
     'id': key,
     'title': window.store[key].title,
-    'tag': window.store[key].author,
+    'tag': window.store[key].tag,
     'category': window.store[key].category,
-    'content': window.store[key].content
+    'content': window.store[key].content,
+    'recipe': window.store[key].recipe
    });
 
    var results = idx.search(searchTerm); // Get lunr to perform a search
