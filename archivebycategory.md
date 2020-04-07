@@ -1,9 +1,9 @@
-    ---
-    layout: page
-    title: Post by Category
-    permalink: /categoryview/
-    sitemap: false
-    ---
+---
+layout: default
+title: Post by Category
+permalink: /categoryview/
+sitemap: false
+---
 
 <div>
     {% assign categories = site.categories | sort %}
