@@ -3,7 +3,7 @@
 
 title: Real Peachy Bites
 url: "https://realpeachybites.github.io/"
-baseurl: ""
+baseurl: "/"
 google_analytics_key:
 newsletter_action: true
 disqus_shortname: realpeachybites-github-io
