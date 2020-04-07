@@ -48,6 +48,10 @@
 }
 }
 
+.container {
+	padding-top: 2em;
+}
+
 .sidebar.push {
 	@media #{$desktop} {
 		padding-top: 72px;
