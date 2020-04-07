@@ -2,8 +2,8 @@
 date: 2020-04-02
 title: Chilli Prawn Linguine
 categories:
-
- - Seafood
+  - Pasta
+  - Seafood
 featured_image: https://i.postimg.cc/wvRPFryw/Chilli-Prawns.jpg
 show_related: true
 recipe:

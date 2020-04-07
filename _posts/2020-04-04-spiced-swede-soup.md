@@ -2,8 +2,7 @@
 date: 2020-04-04
 title: Spiced Swede Soup
 categories:
-
-- Soup  
+  - Soup  
 featured_image: https://i.postimg.cc/x80dP8M0/spiced-swede-soup.jpg
 show_related: true
 recipe:
