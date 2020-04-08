@@ -5,8 +5,9 @@ permalink: /categoryview/
 active: archivebycategory
 sitemap: false
 ---
-[Browse By:-]
-[Date or]({{"/monthview" | prepend: site.baseurl}}) | [ Tag Cloud]({{"/tagcloudview" | prepend: site.baseurl}})
+Browse By:-
+
+[Date ]({{"/monthview" | prepend: site.baseurl}}) | [ Tag Cloud]({{"/tagcloudview" | prepend: site.baseurl}})
 
 {% assign tags = site.categories | sort %}
 {% assign sorted_posts = site.posts | sort: 'title' %}
@@ -18,7 +19,7 @@ sitemap: false
 
 {% for tag in tags %}
 <p><a name="{{ tag | first | slugify }}"></a>&nbsp;</p>
-<h3 class="archivetitle">{{ tag | first | replace:'-', ' ' }} <img src="/icons/open-folder.svg">{{ tag | last | size }}</h3>
+<h3 class="archivetitle">{{ tag | first | replace:'-', ' ' }}{{ tag | last | size }}</h3>
 
 <ul>{% for post in sorted_posts %}{%if post.categories contains tag[0]%}<li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> {% if post.author %} • {{ post.author }}{% endif %}{% if post.date %} • {{ post.date | date: "%B %e, %Y" }}<p>{{ post.excerpt | strip_html | truncate: 100 }}</p>{% endif %}</li>{%endif%}{% endfor %}</ul>
 {% endfor %}
