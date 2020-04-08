@@ -1,20 +1,19 @@
 ---
 layout: default
 title: Post by Date
+id: Index
 permalink: /monthview/
 sitemap: false
 ---
-
-<div id="index">
     {% for post in site.posts %}
         {% unless post.next %}
-            <h2>{{ post.date | date: '%Y' }}</h2>
+            {{ post.date | date: '%Y' }}
         {% else %}
             {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
             {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
             {% if year != nyear %}
-            {% if forloop.index != 1 %}</ul>{% endif %}
-                <h2>{{ post.date | date: '%Y' }}</h2>
+            {% if forloop.index != 1 %}{% endif %}
+                {{ post.date | date: '%Y' }}
             {% endif %}
         {% endunless %}
 
@@ -35,4 +34,3 @@ sitemap: false
         <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
     {% endif %}
     {% endfor %}
-</div>
