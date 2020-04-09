@@ -25,18 +25,28 @@
 
 	<div class="archive-cont" >
    <div id="archives">
-					<p>Archives:-</p> <a title="The complete archive of {{ site.name }}'s Blog by category" href="{{ site.url}}{{ site.baseurl }}/categoryview">
-						<p style="color: #f88832">Category</p></a>
+					<h3>Archives:-</h3> <a title="The complete archive of {{ site.name }}'s Blog by category" href="{{ site.url}}{{ site.baseurl }}/categoryview">
+						<p style="color: #f88832">By Category</p></a>
 						<a title="The complete archive of
      {{ site.name }}'s Blog by month"
 					href="{{ site.url}}{{ site.baseurl }}//monthview">
-						<p style="color: #f88832">Date</p></a>
+						<p style="color: #f88832">By Date</p></a>
 						<a title="The complete archive of
      {{ site.name }}'s Blog by tagcloud"
 					href="{{ site.url}}{{ site.baseurl }}//tagcloudview">
-					 <p style="color: #f88832">Tag Cloud</p></a>
+					 <p style="color: #f88832">By Tag Cloud</p></a>
    </div>
- </div>
+	</div>
+	
+	<div class="cat-panel">
+
+      <h3>Categories</h3>
+      <ul class="no-bullet">
+        {{ range $name, $items := .Site.Taxonomies.categories }}
+        <li><span class="icon-price-tag"></span><a href="{{ $.Site.BaseURL }}categories/{{ $name | urlize | lower }}">{{ replace $name "-" " " | title}} &nbsp;<span>({{ len $items }})</span></a></li>
+        {{ end }}
+      </ul>
+    </div>
 
 	{% if site.newsletter_action && site.newsletter_action!=""%}<form action="{{ site.newsletter_action }}" method="post">
 		<h3>Newsletter</h3>
