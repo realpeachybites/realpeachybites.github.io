@@ -5,9 +5,9 @@ permalink: /categoryview/
 active: archivebycategory
 sitemap: false
 ---
-Browse By:-
+<h1>Archive by Category</h1>
 
-[Date ]({{"/monthview" | prepend: site.baseurl}}) | [ Tag Cloud]({{"/tagcloudview" | prepend: site.baseurl}})
+<h3>Other Archive Pages:-</h3>[By Date ]({{"/monthview" | prepend: site.baseurl}}) | [ By Tag Cloud]({{"/tagcloudview" | prepend: site.baseurl}})
 
 {% assign tags = site.categories | sort %}
 {% assign sorted_posts = site.posts | sort: 'title' %}

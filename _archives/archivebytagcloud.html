@@ -5,14 +5,14 @@ permalink: /tagcloudview/
 active: archivebytagcloud
 sitemap: false
 ---
-Browse By:-
+<h1>Archive by Tag Cloud</h1>
 
-[Date ]({{"/monthview" | prepend: site.baseurl }}) | [ Category]({{"/categoryview" | prepend: site.baseurl}})
+<h3>Other Archive Pages:-</h3>[By Date ]({{"/monthview" | prepend: site.baseurl }}) | [ By Category]({{"/categoryview" | prepend: site.baseurl}})
 
 <div>
 {% assign tags = site.categories | sort %}
 {% for tag in tags %}
-<a href="#{{ tag | first | slugify }}" style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">{{ tag | first | replace:'-', ' ' }}({{ tag | last | size }})</a>
+<a href="#{{ tag | first | slugify }}" {{ tag | last | size  |  times: 4 | plus: 80  }}%">{{ tag | first | replace:'-', ' ' }}({{ tag | last | size }})</a>
 {% endfor %}
 </div>
 
