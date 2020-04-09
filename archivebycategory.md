@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Post by Category
-permalink: /_archives/categoryview/
+permalink: /categoryview/
 active: archivebycategory
 sitemap: false
 ---
