@@ -51,16 +51,18 @@
 	background-color: #fef1e6;
 	border-radius: 0.5em;	
 	line-height: 0.5em;
+
+  #archives p {
+	 margin: 0;
+  padding-left: 10px;
+ }
 }
 
-#archives {
-	padding: 0.5em 1em 0.5 1em;
-}
-
-.cat-panel {
+.index-list {
 	color: #f88832;
-	text-decoration: none;
-	list-style: none;
+	list-style-type: none;
+ margin: 0;
+ padding-left: 10px;
 }
 
 .sidebar.push {
