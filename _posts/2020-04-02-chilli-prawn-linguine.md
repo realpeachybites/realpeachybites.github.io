@@ -4,6 +4,9 @@ title: Chilli Prawn Linguine
 categories:
   - Pasta
   - Seafood
+tags:
+  - Chilli
+  - Prawns
 featured_image: https://i.postimg.cc/wvRPFryw/Chilli-Prawns.jpg
 show_related: true
 recipe:
