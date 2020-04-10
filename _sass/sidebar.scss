@@ -53,7 +53,8 @@
 .archive-cont {
 	background-color: #fef1e6;
 	border-radius: 0.5em;
-	padding: 1em 0 1em 0;	
+	padding-top: 1em;
+	padding-bottom: 1em;	
 	
   #archives h3, p {
 	 margin: 0;
@@ -64,7 +65,8 @@
 .cat-panel {
 	background-color: #fef1e6;
 	border-radius: 0.5em;
-	padding: 1em 0 1em 0;
+	padding-top: 1em;
+	padding-bottom: 1em;
 	
 	h3 {
 		margin: 0;
@@ -73,7 +75,8 @@
 
  li, a {
  	color: #f88832;
-	 list-style-type: none;
+		list-style-type: none;
+		text-align: left;
   margin: 0;
   padding: 0;
 	}
