@@ -41,28 +41,38 @@
 		}
 	}
 }
-	.search {
+.search {
 	padding: 100px 0;	
 	width: 50%;
 	margin: 0 auto;	
 }
+#form {
+	margin-bottom: 1em;
+}
 
-.archive-cont .cat-panel {
+.archive-cont {
 	background-color: #fef1e6;
 	border-radius: 0.5em;
 	padding-top: 1em;	
 	
   #archives .cat-panel, h3, p {
 	 margin: 0;
-  padding-left: 10px;
+		padding-left: 10px;
+		line-height: 0.5em;
  }
 }
 
-.index-list {
-	color: #f88832;
-	list-style-type: none;
- margin: 0;
- padding-left: 10px;
+.cat-panel {
+	background-color: #fef1e6;
+	border-radius: 0.5em;
+	padding-top: 1em;	
+
+ .index-list a {
+ 	color: #f88832;
+	 list-style-type: none;
+  margin: 0;
+  padding-left: 10px;
+	}
 }
 
 .sidebar.push {

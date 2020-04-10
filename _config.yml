@@ -26,6 +26,8 @@ social:
 collections:
   category:
     output: true
+  tags:
+    output: true
 
 # Build
 
