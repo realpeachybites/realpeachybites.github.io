@@ -7,7 +7,7 @@ sitemap: false
 ---
 <h1>Archive by Category</h1>
 
-<h3>Other Archive Pages:-</h3>[By Date ]({{"/monthview" | prepend: site.baseurl}}) | [ By Tag Cloud]({{"/tagcloudview" | prepend: site.baseurl}})
+<h3>Other Archive Pages:- </h3>[By Date ]({{"/monthview" | prepend: site.baseurl}}) | [ By Tag]({{"/tagcloudview" | prepend: site.baseurl}})
 
 {% assign tags = site.categories | sort %}
 {% assign sorted_posts = site.posts | sort: 'title' %}

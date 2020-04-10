@@ -2,12 +2,12 @@
 layout: default
 title: Post by Tag Cloud
 permalink: /tagcloudview/
-active: archivebytagcloud
+active: archivebytag
 sitemap: false
 ---
-<h1>Archive by Tag Cloud</h1>
+<h1>Archive by Tag</h1>
 
-<h3>Other Archive Pages:-</h3>[By Date ]({{"/monthview" | prepend: site.baseurl }}) | [ By Category]({{"/categoryview" | prepend: site.baseurl}})
+<h3>Other Archive Pages:- </h3>[By Date ]({{"/monthview" | prepend: site.baseurl }}) | [ By Category]({{"/categoryview" | prepend: site.baseurl}})
 
 <div>
 {% assign tags = site.categories | sort %}
