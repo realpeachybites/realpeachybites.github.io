@@ -64,14 +64,14 @@
 .cat-panel {
 	background-color: #fef1e6;
 	border-radius: 0.5em;
-	padding-top: 1em;
+	padding: 1em 0 1em 0;
 	
 	h3 {
 		margin: 0;
   padding-left: 10px;
 	}
 
- .index-list li, a {
+ li, a {
  	color: #f88832;
 	 list-style-type: none;
   margin: 0;
