@@ -1,6 +1,23 @@
 ---
-tag: "Cookies"
+layout: default
+categories: "Cookies"
 permalink: "/cookies"
 image_view: true
 related_pitch: "cookies"
 ---
+
+<h1>{{ page.tag }}</h1>
+{% if page.image_view %}
+<div class="recipes">
+  {% for recipe in site.categories = cookies[page.tag] %}
+  <div
+    class="recipe"
+    style="background-image: url('{% include relative-src.html src=recipe.featured_image %}')"
+  >
+    <a href="{% include relative-src.html src=recipe.url %}"
+      ><span>{{ recipe.title }}</span></a
+    >
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
