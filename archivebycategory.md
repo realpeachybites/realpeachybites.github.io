@@ -9,9 +9,9 @@ sitemap: false
 
 <h3>Other Archive Pages:- </h3>[By Date ]({{"/monthview" | prepend: site.baseurl}}) | [ By Tag]({{"/tagcloudview" | prepend: site.baseurl}})
 
+<div id="index"> 
 {% assign tags = site.categories | sort %}
 {% assign sorted_posts = site.posts | sort: 'title' %}
-<div id="index"> 
 {% for tag in tags %}
 <a href="#{{ tag | first | slugify }}">{{ tag | first | replace: '-', ' ' }}({{ tag | last | size }})</a>{% if forloop.last == false %} • {% endif %}{% endfor %}
 {% for tag in tags %}
