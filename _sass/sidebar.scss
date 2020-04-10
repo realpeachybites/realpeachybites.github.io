@@ -49,9 +49,18 @@
 
 .archive-cont {
 	background-color: #fef1e6;
-	border-radius: 0.5em;
-	padding: 0.5em 1em 0.5 1em;
+	border-radius: 0.5em;	
 	line-height: 0.5em;
+}
+
+#archives {
+	padding: 0.5em 1em 0.5 1em;
+}
+
+.cat-panel {
+	color: #f88832;
+	text-decoration: none;
+	list-style: none;
 }
 
 .sidebar.push {
