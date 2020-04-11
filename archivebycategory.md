@@ -7,8 +7,7 @@ sitemap: false
 ---
 <h1>Archive by Category</h1>
 
-<h3>Other Archive Pages:- </h3>
-						<p style="color: #fafafa">By Date</p></a>
+<h3>Other Archive Pages:-</h3>						
 <div style="color: #f88832">[By Date ]({{"/monthview" | prepend: site.baseurl}}) | [ By Tag]({{"/tagcloudview" | prepend: site.baseurl}})</div>
 
 <div id="index"> 
