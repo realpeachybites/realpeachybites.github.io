@@ -9,10 +9,8 @@ sitemap: false
 
 <h3>Other Archives</h3>
 
-<a style="color: #f88832" href="/monthview">By Date</a> | <a style="color: #f88832" href="/tagsview">By Tags</a>
-
-[By Date ]({{"/monthview" | prepend: site.baseurl}}) | [ By Tag]({{"/tagcloudview" | prepend: site.baseurl}})
-
+<a style="color: #f88832" href="/monthview"><strong>By Date</strong></a> | <a style="color: #f88832" href="/tagsview"><strong>By Tag</strong></a>
+<br>
 <div id="index"> 
 {% assign tags = site.categories | sort %}
 {% assign sorted_posts = site.posts | sort: 'title' %}
