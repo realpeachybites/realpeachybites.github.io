@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Post by Tag Cloud
-permalink: /tagcloudview/
+title: Post by Tags
+permalink: /tagsview/
 active: archivebytag
 sitemap: false
 ---
