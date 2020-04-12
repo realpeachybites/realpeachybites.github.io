@@ -25,11 +25,9 @@ social:
 # collections
 collections:
   category:
-    output: true
-      permalink: /:categories/:title/
+    output: true      
   tags:
-    output: true
-      permalink: /:tags/:title/
+    output: true      
 
 # Build
 
