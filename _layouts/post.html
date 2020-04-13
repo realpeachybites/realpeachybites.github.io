@@ -8,17 +8,14 @@ layout: default
   <div class="image">
     <img src="{% include relative-src.html src=page.featured_image %}" alt="{{ page.title }}" />
   </div>
-    <span class="read-time" title="Estimated read time">
+    <span class="read-time-cat-link">
       {% include recipe-icon.html icon="time" %}
       {% assign words = content | number_of_words %}
       {% if words < 360 %}
        1 min Estimated read time.
       {% else %}
       {{ words | divided_by:180 }} Estimated read time.
-      {% endif %}
-    
-    <div class="post-categories">
-      {% if post %}
+      {% endif %} | {% if post %}
       {% assign categories = post.categories %}
       {% else %}
       {% assign categories = page.categories %}
@@ -26,9 +23,9 @@ layout: default
       {% for category in categories %}
       <a style="color: #f88832" href="{{site.baseurl}}/categories/#{{category|slugize}}"><img style="width: 20px; height: 20px;" src="/icons/icon-chefs-hat-32.png"> - {{category}}</a>
       {% unless forloop.last %}&nbsp;{% endunless %}
-      {% endfor %}
-    </div>
+      {% endfor %}    
     </span>
+    <hr align="center" width="50%">
 
     <div class="recipe-body"> 
     {{ content }}
