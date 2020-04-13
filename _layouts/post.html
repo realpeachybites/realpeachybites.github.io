@@ -22,7 +22,7 @@ layout: default
       {% assign categories = page.categories %}
       {% endif %}
       {% for category in categories %}
-      <a style="color: #f88832" href="{{site.baseurl}}/categories/#{{category|slugize}}">&#9679;{{category}}</a>
+      <a style="color: #f88832" href="{{site.baseurl}}/categories/#{{category|slugize}}">&#9679;&nbsp;{{category}}</a>
       {% unless forloop.last %}&nbsp;{% endunless %}
       {% endfor %} | <img style="width: 20px; height: 20px;" src="/icons/icon-chefs-hat-32.png">
       {% if post %}
@@ -31,7 +31,7 @@ layout: default
       {% assign tags = page.tags %}
       {% endif %}
       {% for tags in tags %}
-      <a style="color: #f88832" href="{{site.baseurl}}/categories/#{{category|slugize}}">&#9679;{{tags}}</a>
+      <a style="color: #f88832" href="{{site.baseurl}}/categories/#{{category|slugize}}">&#9679;&nbsp;{{tags}}</a>
       {% unless forloop.last %}&nbsp;{% endunless %}
       {% endfor %}    
     </span>
