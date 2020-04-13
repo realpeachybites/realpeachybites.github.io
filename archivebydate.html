@@ -37,7 +37,7 @@ sitemap: false
             <a style="color: #f88832" href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
             <a style="color: #f88832" href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></a></h3>
     {% else %}
-        <h3><a style="color: #f88832" href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}<p class="date">{{ post.date |  date: "%B %e, %Y" }}</p></a></h3>
+        <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}<p class="date">{{ post.date |  date: "%B %e, %Y" }}</p></a>
         <p>{{ post.excerpt | strip_html | truncate: 80 }}</p>
     {% endif %}
     {% endfor %}
