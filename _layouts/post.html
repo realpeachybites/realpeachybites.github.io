@@ -9,7 +9,16 @@ layout: default
   </div>
 
   <div class="recipe-body">
-      {% include recipe-icon.html icon="time" %} - {% include readtime.html %}
+    <span class="read-time" title="Estimated read time">
+      {% include recipe-icon.html icon="time" %}
+      {% assign words = content | number_of_words %}
+      {% if words < 360 %}
+       1 min read.
+      {% else %}
+      {{ words | divided_by:180 }} mins read.
+      {% endif %}
+    </span>
+      {% include recipe-icon.html icon="time" %}{% include readtime.html %}
     {{ content }}
   </div>
 
