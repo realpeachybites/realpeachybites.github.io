@@ -28,16 +28,17 @@ sitemap: false
     {% capture nmonth %}{{ post.next.date | date: '%m%Y' }}{% endcapture %}
     {% if month != nmonth %}
     {% if forloop.index != 1 %}</ul>{% endif %}
-        <h2>{{ post.date | date: '%B %Y' }}</h2><ul>
+        <h2>{{ post.date | date: '%B %Y' }}</h2>
     {% endif %}
 
 
     {% if post.link %}
         <h3 class="link-post">
-            <a style="color: #f88832" href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-            <a style="color: #f88832" href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></a></h3>
+            <a style="color: #f88832" href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
+            <a style="color: #f88832" href="{{ post.link }}" target="_blank" title="{{ post.title }}"></a>
     {% else %}
-        <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}<p class="date">{{ post.date |  date: "%B %e, %Y" }}</p></a>
+        <a style="color: #f88832" href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+        <p class="date">{{ post.date |  date: "%B %e, %Y" }}</p>
         <p>{{ post.excerpt | strip_html | truncate: 80 }}</p>
     {% endif %}
     {% endfor %}
