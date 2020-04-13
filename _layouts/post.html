@@ -21,7 +21,15 @@ layout: default
       {% assign categories = page.categories %}
       {% endif %}
       {% for category in categories %}
-      <a style="color: #f88832" href="{{site.baseurl}}/categories/#{{category|slugize}}"><img style="width: 20px; height: 20px;" src="/icons/icon-chefs-hat-32.png"> - {{category}}</a>
+      <a style="color: #f88832" href="{{site.baseurl}}/categories/#{{category|slugize}}"><img style="width: 20px; height: 20px;" src="/icons/icon-chefs-hat-32.png"> Catagories - {{category}}</a>
+      {% unless forloop.last %}&nbsp;{% endunless %}
+      {% endfor %} | {% if post %}
+      {% assign tags = post.tags %}
+      {% else %}
+      {% assign tags = page.tags %}
+      {% endif %}
+      {% for tags in tags %}
+      <a style="color: #f88832" href="{{site.baseurl}}/categories/#{{category|slugize}}"><img style="width: 20px; height: 20px;" src="/icons/icon-chefs-hat-32.png"> Tags - {{tags}}</a>
       {% unless forloop.last %}&nbsp;{% endunless %}
       {% endfor %}    
     </span>
