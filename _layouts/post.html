@@ -16,7 +16,7 @@ layout: default
       {% else %}
       {{ words | divided_by:180 }} Estimated read time.
       {% endif %}
-    </span>
+    
     <div class="post-categories">
       {% if post %}
       {% assign categories = post.categories %}
@@ -28,6 +28,8 @@ layout: default
       {% unless forloop.last %}&nbsp;{% endunless %}
       {% endfor %}
     </div>
+    </span>
+
     <div class="recipe-body"> 
     {{ content }}
     </div>
