@@ -12,9 +12,9 @@ layout: default
       {% include recipe-icon.html icon="time" %}
       {% assign words = content | number_of_words %}
       {% if words < 360 %}
-       1 min Estimated read time.
+       Estimated read time - 1 min.
       {% else %}
-      {{ words | divided_by:180 }} Estimated read time.
+       Estimated read time - {{ words | divided_by:180 }}.
       {% endif %} | <img style="width: 20px; height: 20px;" src="/icons/icon-chefs-hat-32.png">
       {% if post %}
       {% assign categories = post.categories %}
