@@ -3,24 +3,11 @@ layout: default
 ---
 
 <article class="post">
-  {% include post-heading.html post=page post_page=true %}
-  <div class="post-categories">
-  {% if post %}
-    {% assign categories = post.categories %}
-  {% else %}
-    {% assign categories = page.categories %}
-  {% endif %}
-  {% for category in categories %}
-  <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
-  {% unless forloop.last %}&nbsp;{% endunless %}
-  {% endfor %}
-</div>
+  {% include post-heading.html post=page post_page=true %} 
 
   <div class="image">
     <img src="{% include relative-src.html src=page.featured_image %}" alt="{{ page.title }}" />
   </div>
-
-  <div class="recipe-body">
     <span class="read-time" title="Estimated read time">
       {% include recipe-icon.html icon="time" %}
       {% assign words = content | number_of_words %}
@@ -30,9 +17,20 @@ layout: default
       {{ words | divided_by:180 }} Estimated read time.
       {% endif %}
     </span>
-      
+    <div class="post-categories">
+      {% if post %}
+      {% assign categories = post.categories %}
+      {% else %}
+      {% assign categories = page.categories %}
+      {% endif %}
+      {% for category in categories %}
+      <a style="color: #f88832" href="{{site.baseurl}}/categories/#{{category|slugize}}"><img style="width: 20px; height: 20px;" src="/icons/icon-chefs-hat-32.png"> - {{category}}</a>
+      {% unless forloop.last %}&nbsp;{% endunless %}
+      {% endfor %}
+    </div>
+    <div class="recipe-body"> 
     {{ content }}
-  </div>
+    </div>
 
   <ul id="recipe" class="recipe-overview">
     <li title="Servings">
