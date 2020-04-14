@@ -8,6 +8,8 @@ layout: default
   <div class="image">
     <img src="{% include relative-src.html src=page.featured_image %}" alt="{{ page.title }}" />
   </div>
+  <ul>
+    <li>
     <span class="read-time-cat-link">
       {% include recipe-icon.html icon="time" %}
       {% assign words = content | number_of_words %}
@@ -35,6 +37,8 @@ layout: default
       {% unless forloop.last %}&nbsp;{% endunless %}
       {% endfor %}    
     </span>
+  </li>
+  </ul>
     <hr align="center" width="50%">
 
     <div class="recipe-body"> 
