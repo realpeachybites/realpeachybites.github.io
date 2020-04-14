@@ -16,9 +16,9 @@ layout: default
       </svg>
       {% assign words = content | number_of_words %}
       {% if words < 360 %}
-       Estimated read time - 1 min.
+       &nbsp;Estimated read time - 1 min.
       {% else %}
-       Estimated read time - {{ words | divided_by:180 }}.
+       &nbsp;Estimated read time - {{ words | divided_by:180 }}.
       {% endif %} | <img style="width: 20px; height: 20px;" src="/icons/icon-chefs-hat-32.png">
       {% if post %}
       {% assign categories = post.categories %}
