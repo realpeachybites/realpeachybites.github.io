@@ -8,10 +8,12 @@ layout: default
   <div class="image">
     <img src="{% include relative-src.html src=page.featured_image %}" alt="{{ page.title }}" />
   </div>
-  <ul>
-    <li>
+  
     <span class="read-time-cat-link">
-      {% include recipe-icon.html icon="time" %}
+      <svg id="i-clock" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor"     stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <circle cx="16" cy="16" r="14" />
+      <path d="M16 8 L16 16 20 20" />
+      </svg>
       {% assign words = content | number_of_words %}
       {% if words < 360 %}
        Estimated read time - 1 min.
@@ -37,8 +39,7 @@ layout: default
       {% unless forloop.last %}&nbsp;{% endunless %}
       {% endfor %}    
     </span>
-  </li>
-  </ul>
+  
     <hr align="center" width="50%">
 
     <div class="recipe-body"> 
