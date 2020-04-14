@@ -61,17 +61,7 @@ defaults:
       path: "index.html"
     values:
       layout: "default"
-      push_sidebar_down: true
-
-  -
-    scope:
-      path: ""
-      type: "category"
-    values:
-      layout: "category"
-      push_sidebar_down: true
-      image_view: true
-    
+      push_sidebar_down: true    
 
 plugins:
   - jekyll-sitemap

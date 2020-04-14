@@ -108,33 +108,10 @@ layout: default
   </div>
 
   <div class="cta">
-    {% assign related_pitch = "" %} {% assign firstCategory = page.categories |
-    first %} {% for category in site.category %} {% if category.tag ==
-    firstCategory %} {% assign related_pitch = category.related_pitch %} {%
-    endif %} {% endfor %}
-    <h2>More delicious recipes{{ related_pitch | prepend: " " }}</h2>
-    {% if page.show_related %}
-
-    <div class="recipes">
-      {% for related in site.categories[firstCategory] %} {% unless page.url ==
-      related.url %}
-      <div
-        class="recipe"
-        style="background-image: url('{% include relative-src.html src=related.featured_image %}')"
-      >
-        <a href="{% include relative-src.html src=related.url %}"
-          ><span>{{ related.title }}</span></a
-        >
-      </div>
-      {% endunless %} {% endfor %}
-    </div>
-    {% endif %}
-
-    <p>This is one of the many fantastic recipes available on this blog</p>
-    <div class="button">
-      <a href="{% include relative-src.html src="/recipes" %}">Check out more recipes</a>
-    </div>
-  </div>
+		<h2>More delicious recipes</h2>
+		<p>This is one of the many fantastic recipes available on this blog</p>
+		<div class="button"><a href="{{ site.baseurl }}/recipes">Check out more recipes</a></div>
+	</div>
   <br>
   <hr>
   <br>

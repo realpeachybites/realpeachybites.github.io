@@ -11,11 +11,10 @@ image_view: true
 		<h2>{{ category[0] }}</h2>
 		<div class="recipes">
 			{% for recipe in category[1] %}
-				<div class="recipe" style="background-image: url('{% include relative-src.html src=recipe.featured_image %}')">
-					<a href="{% include relative-src.html src=recipe.url %}"><span>{{ recipe.title }}</span></a>
+				<div class="recipe" style="background-image: url('{{ recipe.featured_image }}')">
+					<a href="{{ site.baseurl }}{{ recipe.url }}"><span>{{ recipe.title }}</span></a>
 				</div>
 			{% endfor %}
 		</div>
 	{% endfor %}
 {% endif %}
-
