@@ -27,7 +27,9 @@ collections:
   category:
     output: true      
   tags:
-    output: true      
+    output: true 
+
+# -----     
 
 # Build
 
