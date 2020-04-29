@@ -1,89 +1,92 @@
 .sidebar {
-	width: 250px;
-	padding: 70px 0 0 0;
-	margin: 0 auto;
+  width: 250px;
+  padding: 70px 0 0 0;
+  margin: 0 auto;
 
-	@media #{$desktop} {
-		margin: 0;
-		padding: 0 0 0 70px;
-	}
+  @media #{$desktop} {
+    margin: 0;
+    padding: 0 0 0 70px;
+  }
 
-	.author {
-		text-align: center;
-		p {
-			padding: 0;
-			margin: 0;
-		}
-		img {
-			width: 200px;
-			border-radius: 50%;
-			margin: 0 0 10px 0;
-		}
-	}
+  .author {
+    text-align: center;
+    p {
+      padding: 0;
+      margin: 0;
+    }
+    img {
+      width: 200px;
+      height: 200px;
+      border-radius: 100%;
+      margin: 0 0 10px 0;
+    }
+  }
 
-	.social-icons {
-		display: flex;
-		justify-content: center;
-		margin: 10px 0 0 0;
-		a {
-			padding: 3px;
-			text-decoration: none;
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 0 0;
+    a {
+      padding: 3px;
+      text-decoration: none;
 
-			&:hover svg {
-				fill: #fcd4b5;
-			}
-		}
+      &:hover svg {
+        fill: #fcd4b5;
+      }
+    }
 
-		svg {
-			width: 25px;
-			height: 25px;
-			fill: #f88832;
-		}
-	}
+    svg {
+      width: 25px;
+      height: 25px;
+      fill: #f88832;
+    }
+  }
 }
 .search {
-	padding: 100px 0;	
-	width: 50%;
-	margin: 0 auto;	
+  padding: 100px 0;
+  width: 50%;
+  margin: 0 auto;
 }
 #form {
-	margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 .archive-cont {
-	background-color: #fef1e6;
-	border-radius: 0.5em;
-	padding-top: 1em;
-	padding-bottom: 1em;	
-	
-  #archives h3, p {
-	 margin: 0;
-		padding-left: 10px;		
- }
+  background-color: #fef1e6;
+  border-radius: 0.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+  #archives h3,
+  p {
+    margin: 0;
+    padding-left: 10px;
+  }
 }
 
 .cat-panel {
-	background-color: #fef1e6;
-	border-radius: 0.5em;
-	padding-top: 1em;
-	padding-bottom: 1em;
-	
-	h3 {
-		margin: 0;
-  padding-left: 10px;
-	}
+  background-color: #fef1e6;
+  border-radius: 0.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 
- li, a {
- 	color: #f88832;
-		list-style-type: none;
-		text-align: left;
-  margin: 0;
-  padding: 0;
-	}
+  h3 {
+    margin: 0;
+    padding-left: 10px;
+  }
+
+  li,
+  a {
+    color: #f88832;
+    list-style-type: none;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .sidebar.push {
-	@media #{$desktop} {
-		padding-top: 72px;
-	}
+  @media #{$desktop} {
+    padding-top: 72px;
+  }
 }
