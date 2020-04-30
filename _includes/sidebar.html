@@ -1,58 +1,137 @@
 <aside class="sidebar {% if page.push_sidebar_down %}push{% endif %}">
-	<div class="author">
-		<p>
-			<a href="{{ site.baseurl }}/about/">
-				<img src="{{ site.baseurl }}{{ site.data.sidebar.author_image }}" alt="author" class="author">
-			</a>
-		</p>
-		<p>{{ site.data.sidebar.description_markdown | markdownify }}</p>
-	</div>
+  <div class="author">
+    <p>
+      <a href="{{ site.baseurl }}/about/">
+        <img
+          src="{{ site.baseurl }}{{ site.data.sidebar.author_image }}"
+          alt="author"
+          class="author"
+        />
+      </a>
+    </p>
+    <p>{{ site.data.sidebar.description_markdown | markdownify }}</p>
+  </div>
 
-	<div class="social-icons">
-		{% if site.data.sidebar.facebook && site.data.sidebar.facebook != "" %}<a target="_blank" href="https://facebook.com/{{ site.data.sidebar.facebook }}">{% include social-icon.html icon="Facebook" %}</a>{% endif %} 
-		{% if site.data.sidebar.twitter && site.data.sidebar.twitter != "" %}<a target="_blank" href="https://twitter.com/{{ site.data.sidebar.twitter }}">{% include social-icon.html icon="Twitter" %}</a>{% endif %} 
-		{% if site.data.sidebar.pinterest && site.data.sidebar.pinterest != "" %}<a target="_blank" href="https://pinterest.com/{{ site.data.sidebar.pinterest }}">{% include social-icon.html icon="Pinterest" %}</a>{% endif %} 
-		{% if site.data.sidebar.instagram && site.data.sidebar.instagram != "" %}<a target="_blank" href="https://www.instagram.com/{{ site.data.sidebar.instagram }}">{% include social-icon.html icon="Instagram" %}</a>{% endif %} 
-		<a target="_blank" href="{{ site.baseurl }}/feed.xml">{% include social-icon.html icon="RSS" %}</a>
-	</div>
+  <div class="social-icons">
+    {% if site.data.sidebar.facebook && site.data.sidebar.facebook != "" %}<a
+      target="_blank"
+      href="https://facebook.com/{{ site.data.sidebar.facebook }}"
+      >{% include social-icon.html icon="Facebook" %}</a
+    >{% endif %} {% if site.data.sidebar.twitter && site.data.sidebar.twitter !=
+    "" %}<a
+      target="_blank"
+      href="https://twitter.com/{{ site.data.sidebar.twitter }}"
+      >{% include social-icon.html icon="Twitter" %}</a
+    >{% endif %} {% if site.data.sidebar.pinterest &&
+    site.data.sidebar.pinterest != "" %}<a
+      target="_blank"
+      href="https://pinterest.com/{{ site.data.sidebar.pinterest }}"
+      >{% include social-icon.html icon="Pinterest" %}</a
+    >{% endif %} {% if site.data.sidebar.instagram &&
+    site.data.sidebar.instagram != "" %}<a
+      target="_blank"
+      href="https://www.instagram.com/{{ site.data.sidebar.instagram }}"
+      >{% include social-icon.html icon="Instagram" %}</a
+    >{% endif %}
+    <a target="_blank" href="{{ site.baseurl }}/feed.xml"
+      >{% include social-icon.html icon="RSS" %}</a
+    >
+  </div>
 
-	<form action="/search.html" method="get">
-		<label for="search_box"><h3>Search Recipes</h3></label>
-		<input placeholder="ie:-Tomato Soup" type="text" id="search_box" name="query">
-		<input type="submit" value="Search">
-	</form>
- <br>
-	<div class="archive-cont" >
-   <element id="archives">
-					<h3>Archives:-</h3> <a title="The complete archive of {{ site.name }}'s Blog by category" href="{{ site.url}}{{ site.baseurl }}/categoryview">
-						<p style="color: #f88832"><img style="width: 20px; height: 20px;" src="/icons/icon-chefs-hat-32.png"> - By Category</p></a>
-						<a title="The complete archive of
+  <form action="/search.html" method="get">
+    <label for="search_box"><h3>Search Recipes</h3></label>
+    <input
+      placeholder="ie:-Tomato Soup"
+      type="text"
+      id="search_box"
+      name="query"
+    />
+    <input type="submit" value="Search" />
+  </form>
+  <br />
+  <div class="archive-cont">
+    <element id="archives">
+      <h3>Archives:-</h3>
+      <a
+        title="The complete archive of {{ site.name }}'s Blog by category"
+        href="{{ site.url}}{{ site.baseurl }}/categoryview"
+      >
+        <p style="color: #f88832;">
+          <img
+            style="width: 20px; height: 20px;"
+            src="/icons/icon-chefs-hat-32.png"
+          />
+          - By Category
+        </p></a
+      >
+      <a
+        title="The complete archive of
      {{ site.name }}'s Blog by month"
-					href="{{ site.url}}{{ site.baseurl }}//monthview">
-						<p style="color: #f88832"><img style="width: 20px; height: 20px;" src="/icons/icon-chefs-hat-32.png"> - By Date</p></a>
-						<a title="The complete archive of
+        href="{{ site.url}}{{ site.baseurl }}//monthview"
+      >
+        <p style="color: #f88832;">
+          <img
+            style="width: 20px; height: 20px;"
+            src="/icons/icon-chefs-hat-32.png"
+          />
+          - By Date
+        </p></a
+      >
+      <a
+        title="The complete archive of
      {{ site.name }}'s Blog by tagcloud"
-					href="{{ site.url}}{{ site.baseurl }}//tagsview">
-					 <p style="color: #f88832"><img style="width: 20px; height: 20px;" src="/icons/icon-chefs-hat-32.png"> - By Tags</p></a>
-   </element>
-	</div>
-	<br>
-	<div class="cat-panel">
-      <h3>Categories</h3>
-      <ul class="index-list">
-							{% assign tags = site.categories | sort %}
-							{% assign sorted_posts = site.posts | sort: 'title' %}
-							{% for tag in tags %}
-							<li><img style="width: 20px; height: 20px;" src="/icons/icon-chefs-hat-32.png">&nbsp;<a style="color: #f88832" href="/{ tag | first | slugify }}">{{ tag | first | replace: '-', ' ' }}({{ tag | last | size }})</a></li>{% if forloop.last == false %}
-							{% endif %}{% endfor %}        
-      </ul>
- </div>
+        href="{{ site.url}}{{ site.baseurl }}//tagsview"
+      >
+        <p style="color: #f88832;">
+          <img
+            style="width: 20px; height: 20px;"
+            src="/icons/icon-chefs-hat-32.png"
+          />
+          - By Tags
+        </p></a
+      >
+    </element>
+  </div>
+  <br />
+  <div class="cat-panel">
+    <h3>Categories</h3>
+    <ul class="index-list">
+      {% assign tags = site.categories | sort %} {% assign sorted_posts =
+      site.posts | sort: 'title' %} {% for tag in tags %}
+      <li>
+        <img
+          style="width: 20px; height: 20px;"
+          src="/icons/icon-chefs-hat-32.png"
+        />&nbsp;<a style="color: #f88832;" href="/{ tag | first | slugify }}"
+          >{{ tag | first | replace: '-', ' ' }}({{ tag | last | size }})</a
+        >
+      </li>
+      {% if forloop.last == false %} {% endif %}{% endfor %}
+    </ul>
+  </div>
 
-	{% if site.newsletter_action && site.newsletter_action!=""%}<form action="{{ site.newsletter_action }}" method="post">
-		<h3>Newsletter</h3>
-		<p>Get my latest recipes sent straight to your inbox.</p>
-		<input type="text" name="EMAIL" placeholder="Email address">
-		<input type="submit" value="Sign up">
-	</form>
-	{% endif %}
+  {% if site.newsletter_action && site.newsletter_action!=""%}
+  <form action="{{ site.newsletter_action }}" method="post">
+    <h3>Newsletter</h3>
+    <p>Get my latest recipes sent straight to your inbox.</p>
+    <input type="text" name="EMAIL" placeholder="Email address" />
+    <input type="submit" value="Sign up" />
+  </form>
+  {% endif %} {{ if .Site.Params.sidebar.categories}}
+  <div class="panel radius">
+    <h3>Categories</h3>
+    <ul class="no-bullet">
+      {{ range $name, $items := .Site.Taxonomies.categories }}
+      <li>
+        <span class="icon-price-tag"></span
+        ><a href="{{ $.Site.BaseURL }}categories/{{ $name | urlize | lower }}"
+          >{{ replace $name "-" " " | title}} &nbsp;<span
+            >({{ len $items }})</span
+          ></a
+        >
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+  {{ end }}
 </aside>
